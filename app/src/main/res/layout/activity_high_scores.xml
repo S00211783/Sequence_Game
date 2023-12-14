@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/activity_high_scores.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Top 5 High Scores"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+    <ListView
+        android:id="@+id/listViewHighScores"
+        android:layout_width="wrap_content"
+        android:layout_height="541dp"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listViewHighScores"
+        android:onClick="showMenu"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="120dp"
+        android:gravity="center"
+        android:text="Main Menu" />
+</RelativeLayout>
